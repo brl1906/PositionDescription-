@@ -128,3 +128,42 @@ def position_radarchart(job_title, workplan):
     else:
         error_msg = 'The workplan parameter expects a dictionary, but received {}.'.format(type(workplan))
         raise InvalidParameterType(error_msg)
+
+        
+
+def publish_chart(job, fileoption='overwrite'):
+    """Generates Plotly chart, pushing to account and returning the chart url as a string.
+    
+    Parameters 
+    ----------
+    job:        instance of class Position  
+            The object contains the core common elements of a work position to be advertised and recruited for.
+    
+    fileoption: str
+            The option for how Plotly should handle future calls to the function for the same chart. Valid
+            values include: 'new', 'overwrite', 'extend', and 'append'. They have the following actions: 
+            ('new' | 'overwrite' | 'extend' | 'append') -- 'new' creates a
+            'new': create a new, unique url for this plot
+            'overwrite': overwrite the file associated with `filename` with this
+            'extend': add additional numbers (data) to existing traces
+            'append': add additional traces to existing data lists        
+    
+    Returns
+    -------
+    str:    Returns the url to the generated Plotly chart.  
+    
+    Example
+    -------
+    >>>  publish_chart(executive_fellowship)
+    
+    >>>  publish_chart(job=grant_specialist, fileoption='new')
+    """
+    
+    try:
+        figure = position_radarchart(job.title, job.workplan)
+        filename = '{}-posting'.format(job.title.lower().replace(' ','-'))
+    
+        return py.plot(figure, filename, fileopt=fileoption, auto_open=False)
+    
+    except Exception as e:
+        raise e
