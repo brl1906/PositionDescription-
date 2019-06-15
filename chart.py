@@ -2,8 +2,6 @@ import pandas as pd
 import plotly.plotly as py
 import plotly.graph_objs as go
 
-
-
 class Error(Exception):
     """Base class for throwing exceptions"""
     pass
