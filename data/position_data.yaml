@@ -42,7 +42,10 @@ executive fellow:
 paperless manager:
   title: 'Paperless Government Manager'
   
-  workplan: 'TBD...'
+  workplan: {'Documentation':9,'BPM':12,'Project Roadmap':14,
+  'Design & Deploy<br>Workflows':20,'Contract<br>Management':3,
+  'Training &<br>Education':7,'Team<br>Management':10,
+  'Reporting':7,'System<br>Administration':18}
   
   description: 'TBD...'
  
