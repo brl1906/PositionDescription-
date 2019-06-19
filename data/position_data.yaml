@@ -42,7 +42,7 @@ executive fellow:
 grants fleet:
   title: 'Innovation & Management Grants Manager'
   
-  workplan: {'Policy Research':15, 'Grants Research':16,
+  workplan: {'Policy<br>Research':15, 'Grants<br>Research':16,
   'Gants Calendar &<br>Project Management':14,
   'Interagency<br>Coordination':12, 'Compilation of<br>Financial Data':12,
   'Manage Grant<br>Submissions':19, 'Ad hoc':12}
