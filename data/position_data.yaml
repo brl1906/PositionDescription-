@@ -4,7 +4,7 @@ executive fellow:
   
   workplan: {'Policy<br>Research':12,'Administrative<br>Coordination':25,
   'Data Analysis':5,'Contract<br>Management':8,'Formal<br>Writing':14,
-  'Problem<br>Solving':20,'Project<br>Management':16,'Public<br>Speaking':0}
+  'Problem<br>Solving':18,'Project<br>Management':16,'Public<br>Speaking':2}
   
   description: "General Purpose\n
   Under broad supervision and direction from the Director of the Business Process Improvement Office, assist in the administration and coordination
@@ -74,10 +74,10 @@ paperless summer fellow:
 paperless manager:
   title: 'Paperless Government Manager'
   
-  workplan: {'Documentation':9,'BPM':12,'Project Roadmap':14,
-  'Design & Deploy<br>Workflows':20,'Contract<br>Management':3,
-  'Training &<br>Education':7,'Team<br>Management':10,
-  'Reporting':7,'System<br>Administration':18}
+  workplan: {'Documentation':12,'BPM':20,'Project Roadmap':13,
+  'Design & Deploy<br>Workflows':20,'Contract<br>Management':5,
+  'Training &<br>Education':5,'Team<br>Management':15,
+  'Reporting':5,'System<br>Administration':5}
   
   description: "General Purpose
 Execute the long term vision for establishing paperless operations that: 1) supports data driven decision making through the capture of process data and metadata on operational transactions and resource allocation,  2) provides data about how services are delivered that empower the continuous process improvement functions of the BPIO, and standardizes core service delivery processes across units divisions and eventually across city agencies.  Apply product management critical problem solving, investigatory, process mapping and process logic skills to document, assess, prioritize, build, test and deploy paperless workflows, reducing the government’s dependence on paper for operations and helping to capture necessary process metadata to drive process improvement initiatives. 
@@ -93,7 +93,7 @@ Core activities and deliverables of this position include: 1) conducting intervi
  
 
 
-cits role:
+CITS role:
   title: 'Python Instructor'
   
   workplan: None
