@@ -39,7 +39,18 @@ executive fellow:
   servants in Baltimore.  "
   
   
+grants fleet:
+  title: 'Innovation & Management Grants Manager'
   
+  workplan: {'Policy Research':15, 'Grants Research':16,
+  'Gants Calendar &<br>Project Management':14,
+  'Interagency<br>Coordination':12, 'Compilation of<br>Financial Data':12,
+  'Manage Grant<br>Submissions':19, 'Ad hoc':12}
+  
+  description: "\tThe Management & Innovation Grants Program Manager (MIGM) is a critical administrative and program management role supporting the formulation and implementation of the long term management and resource deployment  vision of the FMD. The MIGM will report to the Assistant Division Chief and receive day to day supervision and support from the FMD Procurement Officer. This team member will be responsible for developing a roadmap for and establishing a program for the management of a grants calendar and grants program to support innovation in energy policy related to fleet usage, the transition to more energy efficient operations and general innovations in the operations of the FMD.  This includes: conducting policy research, conducting research on and prioritizing grant opportunities, coordinating interagency and intra agency action necessary to submit timely grant applications, establishing well defined and documented operating procedures for the management of proposals and post-awarded grants.\n\tIn addition to increased innovation, the grant focus area shall be aimed at securing funding to: 1) renew and increase transportation fleet for City agencies, 2) create more alternative vehicle options (i.e. electrical/hybrids) and, 3)  researching innovative transportation options to improve/advance agency fleets. "
+
+
+
 junior data architect:
   title: 'junior data architect'
   
