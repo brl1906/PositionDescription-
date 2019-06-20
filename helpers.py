@@ -197,7 +197,48 @@ def show_position_titles(file):
     except Exception as e:
         return e
     
+    
+    
+class InvalidPositionArgument(Exception):
+    """Custom error for handling error bad values for show_position_elements method."""
+    pass
 
+def show_position_elements(position, jobs=jobs):
+    """Returns list of all attributes associated with the Position class. 
+    
+    Function provides a list of all the availalbe attributes inherited for 
+    each position. It provides the elements avialable but does not provide information 
+    on whether or not the attribute has a None value (possible if a position was 
+    created with missing information in a way that satisfies the requirements of the 
+    Position class) or has data.
+    
+    Parameters
+    ----------
+    position:  Str
+       Instance of the Position class. Caputres data for a job position to be posted.
+       
+    Returns
+    -------
+    list:   Returns a list of attributes available in a given position.  
+    
+    Example
+    -------
+    >>> show_position_elements('grants manager') # returns attributes like: ['about_job', 'about_org', 'division', 'title', 'workplan']
+    """
+     
+    if position:
+        try:
+            attributes = [attr for attr in dir(jobs[position])
+                         if not attr.startswith('__') and
+                         not callable(getattr(jobs[position], attr))]
+            
+            return attributes
+        
+        except Exception as e:
+            error_msg = ("""The position parameter is not valid. Must be a position appearing in the jobs parameter or in the Yaml file containing positions. Valid values include: {}. Instead received: {}
+            """.format(list(jobs.keys()),position))
+            
+            raise InvalidPositionArgument(error_msg)
 
         
 
