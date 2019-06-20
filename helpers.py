@@ -241,7 +241,41 @@ def show_position_elements(position, jobs=jobs):
             raise InvalidPositionArgument(error_msg)
 
         
+        
+def show_position_description(position, jobs=jobs):
+    """Return the job description for a given position.
+    
+    Parameters
+    ----------
+    position:  Str
+        Instance of the Position class. Caputres data for a job position to be posted.. 
+    
+    Returns
+    -------
+    Str:  Returns text describing the position.  This attribute corresponds to the information
+          about a given job and its general description of work scope. 
+    
+    Example
+    -------
+    >>> show_position_description(file='data/positions_data.yaml')
+        
+    """
+    if position in jobs:
+        try:
+            description = jobs[position].about_job
+            
+            return description
+        
+        except Exception as e:
+            error_msg = ("""The position parameter is not valid. Must be a position appearing in the jobs parameter or in the Yaml file containing positions. Valid values include: {}. Instead received: {}
+            """.format(list(jobs.keys()),position))
+            raise InvalidPositionArgument(error_msg)
 
+    else:
+        error_msg = ("""The position parameter is not valid. Must be a position appearing in the jobs parameter or in the Yaml file containing positions. Valid values include: {}. Instead received: {}
+        """.format(list(jobs.keys()),position))
+        
+        raise InvalidPositionArgument(error_msg)
 
         
 #########################################################################
