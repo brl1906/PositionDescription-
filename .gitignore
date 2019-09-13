@@ -1,0 +1,18 @@
+## Configuration Files ##
+client_secrets.*
+credentials.*
+settings.*
+
+## Jupyter Notebooks ##
+.ipynb_checkpoints
+TODO.ipynb
+
+## Position Descriptions ##
+*.docx
+
+## Storage Items ##
+.DS_Store
+__pycache__/
+
+## Virtual Environment ##
+venv-pd/
