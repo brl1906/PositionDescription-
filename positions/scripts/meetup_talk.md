@@ -1,0 +1,1 @@
+Python Meet Up Talk [Slides](https://docs.google.com/presentation/d/1l4QA_PoBXrxbgHkdbkiQ-ArSy00m0Z2ZZ_JfsTbkoMI/edit?usp=sharing) 
