@@ -29,7 +29,7 @@ $ python position.py --help
 
 ## The below command is example usage for a job posting for a Paperless Government Manager position in the Business Process Improvement Office (bpio):
 ```
-$ python position.py --division=bpio --yaml_file=paperless_manager.yaml
+$ python position.py --division=bpio --yaml_file=data/paperless_manager.yaml
 ```
 
 ## **Primary Output**
