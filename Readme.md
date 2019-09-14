@@ -25,7 +25,7 @@
 ```
 $ python position.py --help
 ```
-![image](images/terminal-help.png)
+![image](positions/images/terminal-help.png)
 
 ## The below command is example usage for a job posting for a Paperless Government Manager position in the Business Process Improvement Office (bpio):
 ```
@@ -36,14 +36,14 @@ $ python position.py --division=bpio --yaml_file=paperless_manager.yaml
 ### A core program output is a job posting with the following elements: Job Title, Organization Background, Job Summary, Activities & Deliverables, and a radar chart visualizing task area allocation.  Below are images of the Google Drive folder registering a new document and the position description itself.
 
 ### Upon run, the application generates a progress bar in the terminal to communicate progress towards the completion of the tasks in the program. 
-![](images/successful-run.png)
+![](positions/images/successful-run.png)
 
 ### The Google Drive account folder now contains the position description. 
-![](images/google-drive-folder-image.png)
+![](positions/images/google-drive-folder-image.png)
 
 ### The documents generated have the following format:
-![](images/document-page1.png)
-![](images/document-page2.png)
+![](positions/images/document-page1.png)
+![](positions/images/document-page2.png)
 
 
 ## <font color=darkgrey>Secondary Output</font>
