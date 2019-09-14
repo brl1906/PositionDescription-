@@ -50,5 +50,18 @@ $ python position.py --division=bpio --yaml_file=data/paperless_manager.yaml
 ### A secondary output of the program is the generation of an interactive radar chart for the position pushed to a Plotly account, accessible through the account  or accesible publicly by anyone with the unique chart url: [example](https://chart-studio.plot.ly/~brl1906/1663) 
 
 ## **Requirements & Dependencies**
-### The application takes advantage of the [Google Drive](https://www.google.com/drive/) and  [Plotly Chart Studio](https://plot.ly/online-chart-maker/) and has the following core requirements installed via pip.  
+### The application takes advantage of the [Google Drive](https://www.google.com/drive/) and  [Plotly Chart Studio](https://plot.ly/online-chart-maker/) and has the following core requirements installed via pip. 
+
+### In order to run the program, additional files need to be added to the <font color=green>positions/scripts</font> folder. These files are for :1) handling Google login  , 2) allowing the command line program access to Google Drive and, 3) executing the above two tasks programattically with stored credentials, removing the need for a browser to pop up and a user to interact directly with the program or click buttons or interact with Google. **Ain't nobody got time for clicking buttons**.
+
+### One additional folder needs to be added to the <font color=green>positions/scripts/data</font> folder for handling where the program generated files are sent inside of the Google Drive account.   Info on these 4 files is below:
+
+|Directory  | Filename  | Contents
+---| ---| ---|
+positions/scripts | *client_secrets.json* | **bunch of secret stuff**
+positions/scripts | *credentials.json* | **bunch of secret stuff**
+positions/scripts | *settings.yaml* | **some of secret stuff** & ```oauth_scope: PROGRAMACCESSSCOPES```
+positions/scripts/data | *google_folders.yaml* | ```folderName: GOOGLEFOLDERNAME``` ```folderID: GOOGLEFOLDERID```
+
+
 
